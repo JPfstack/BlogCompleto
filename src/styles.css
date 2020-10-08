@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Handlee&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color-principal: #black;
+    --color-secundario: #212white42e;
+    --fuenteprincipal: "Baloo 2", cursive;
+    --fuentesecundaria: "handlee", cursive;
+    --anchoMaximo: 1100px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;;
+}
+
