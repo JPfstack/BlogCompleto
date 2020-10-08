@@ -1,0 +1,38 @@
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main {
+    display: flex;
+}
+
+main section {
+    width: 80%;
+    padding: 20px 10px;
+    border-right: 3px solid var(--colorprincipal);
+}
+
+main article h1 {
+    font-family: var(--fuentesecundaria);
+    font-size: 50px;
+}
+
+main article p {
+    font-family: var(--fuenteprincipal);
+    font-size: 18px;
+}
+
+main aside {
+    padding: 20px 10px;
+    width: 20%;
+
+}
+
+main aside h4 {
+    font-family: var(--fuentesecundaria);
+    text-align: center;
+    width: 100%;
+    padding-top: 25px;
+  
+}

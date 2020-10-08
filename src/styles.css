@@ -9,8 +9,8 @@
 }
 
 :root {
-    --color-principal: #black;
-    --color-secundario: #212white42e;
+    --colorprincipal: rgb(219, 236, 243);
+    --colorsecundario: blue;
     --fuenteprincipal: "Baloo 2", cursive;
     --fuentesecundaria: "handlee", cursive;
     --anchoMaximo: 1100px;

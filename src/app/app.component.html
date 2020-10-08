@@ -1,8 +1,24 @@
 <header>
+  <div class="barra">
+    <div>
+      <img src="../assets/imagenes/Pecestropicales.png" alt="PecesTropicales">
+    </div>
 
+    <nav>
+      <ul>
+        <li [routerLink]="['/blog']">Inicio</li>
+        <li [routerLink]="['/nuevopost']">Nuevo post</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <img src="../assets/imagenes/Pecestropicales1.png" alt="Pecestropicales">
+  </div>
 </header>
 
+<router-outlet></router-outlet>
 
 <footer>
-
+  <p>PecesTropicales.club 2020</p>
 </footer>

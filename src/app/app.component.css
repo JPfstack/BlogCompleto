@@ -1,3 +1,47 @@
-p {
-    font-family: var(--fuenteprincipal)
+.barra {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    padding-right: 25px;
+    background-color:var(--colorprincipal)
+}
+
+.barra img {
+    width: 75px;
+}
+
+.barra nav ul {
+    display: flex;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.barra nav ul li {
+    font-family: var(--fuenteprincipal);
+    font-size: 20px;
+    text-decoration: none;
+    list-style: none;
+    padding-left: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.barra nav ul li:focus{
+border: none;
+color: blue;
+outline: none;
+}
+
+
+
+.hero{
+    padding-top: 75px;
+    border-bottom: 3px solid var(--colorprincipal);
+}   
+
+footer p {
+    font-family: var(--fuenteprincipal);
+    text-align: center;
+    background-color: var(--colorprincipal);
 }
