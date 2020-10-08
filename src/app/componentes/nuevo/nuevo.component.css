@@ -30,6 +30,6 @@ form label, input{
 }
 
 .btn:hover {
-background-color: var(--colorprincipal);
-color:var(--colorsecundario);
+    background-color: var(--colorprincipal);
+    color:var(--colorsecundario);
 }
