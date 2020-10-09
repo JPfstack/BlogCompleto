@@ -20,6 +20,11 @@ export class BlogComponent implements OnInit {
     this.listaPost = await this.peticionesService.getAllPost();
     console.log(this.listaPost);
 
+
+
+
   }
 
 }
+
+
