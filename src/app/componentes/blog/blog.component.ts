@@ -20,15 +20,11 @@ export class BlogComponent implements OnInit {
     this.listaPost = await this.peticionesService.getAllPost();
     console.log(this.listaPost);
 
-    for (let textoPrincipal of this.listaPost) {
-      let texto1 = textoPrincipal.texto;
-      let texto2 = texto1.substring(0, 250);
-      console.log(texto2);
 
 
-
-    }
 
   }
 
 }
+
+
