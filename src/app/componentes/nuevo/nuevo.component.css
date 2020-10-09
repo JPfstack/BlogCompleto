@@ -25,8 +25,11 @@ form label, input{
     font-family: var(--fuenteprincipal);
     font-size: 17px;
 }
+
 .botones {
-    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
 }
 
 .btn:hover {

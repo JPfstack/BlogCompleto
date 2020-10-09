@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { PeticionesService } from '../../peticiones.service';
 
 @Component({
   selector: 'app-nuevo',
@@ -11,7 +12,9 @@ export class NuevoComponent implements OnInit {
   //VARIABLES 
   nuevopost: FormGroup;
 
-  constructor() {
+  constructor(
+    private peticionesService: PeticionesService
+  ) {
     this.nuevopost = new FormGroup({
       titulo: new FormControl(),
       texto: new FormControl(),
@@ -23,7 +26,9 @@ export class NuevoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onEnviar() {
+  async onEnviar() {
+    const respuesta = await this.peticionesService.addPost(this.nuevopost.value);
+    console.log(respuesta);
 
   }
 

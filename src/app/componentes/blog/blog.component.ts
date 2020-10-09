@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeticionesService } from '../../peticiones.service';
+import { POST } from '../../models/post.model';
 
 @Component({
   selector: 'app-blog',
@@ -8,14 +9,25 @@ import { PeticionesService } from '../../peticiones.service';
 })
 export class BlogComponent implements OnInit {
 
+  //VARIABLES
+  listaPost: POST[];
+
   constructor(
     private peticionesService: PeticionesService,
   ) { }
 
   async ngOnInit() {
-    const listaPost = await this.peticionesService.getAllPost();
-    console.log(listaPost);
+    this.listaPost = await this.peticionesService.getAllPost();
+    console.log(this.listaPost);
 
+    for (let textoPrincipal of this.listaPost) {
+      let texto1 = textoPrincipal.texto;
+      let texto2 = texto1.substring(0, 250);
+      console.log(texto2);
+
+
+
+    }
 
   }
 

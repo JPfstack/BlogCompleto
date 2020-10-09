@@ -20,4 +20,8 @@ export class PeticionesService {
     return this.httpClient.get<POST[]>(this.baseUrl).toPromise();
   }
 
+  addPost(formvalue): Promise<POST> {
+    return this.httpClient.post<POST>(this.baseUrl, formvalue).toPromise();
+  }
+
 }
