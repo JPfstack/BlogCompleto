@@ -13,7 +13,7 @@ export class PeticionesService {
   constructor(
     private httpClient: HttpClient
   ) {
-    this.baseUrl = "http://localhost:3000/api/posts";
+    this.baseUrl = "https://blogpeces.herokuapp.com/";
   }
 
   getAllPost(): Promise<POST[]> {
